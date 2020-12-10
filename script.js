@@ -51,6 +51,7 @@ class TriviaGameShow {
       this.fetchCategories();
    }
    
+
    fetchCategories() {      
       //Fetch all of the data from the API
       const categories = this.useCategoryIds.map(category_id => {
@@ -173,7 +174,8 @@ class TriviaGameShow {
       friendlyAnswer = friendlyAnswer.replace(/^an /, "");      
       return friendlyAnswer.trim();
    }
-      
+   
+   
    revealAnswer(isCorrect) {
       
       //Show the individual success/fail case
